@@ -42,7 +42,17 @@ strong {
 
 h2 {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 24px;
+  font-display: auto;
+  font-weight: normal;
+  padding: 0px;
+  margin: 0px;
+  display:inline; 
+}
+
+h4 {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 20px;
   font-display: auto;
   font-weight: normal;
   padding: 0px;
@@ -116,7 +126,27 @@ span.highlight {
     padding: 0px;
     position: relative;
     width: auto;
-    height: 325px;
+    height: 280px;
     overflow: scroll;
     overflow-x: hidden;
+}
+
+/* Custom scrollbar styling */
+#oScroll::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+  height: 10px; /* Height of the scrollbar */
+}
+
+#oScroll::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+#oScroll::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+#oScroll::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar thumb on hover */
 }

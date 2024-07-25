@@ -6,8 +6,13 @@ image: /images/conformalbbox2.jpg
 categories: research
 author: "Alexander Timans"
 authors: "<strong>Alexander Timans</strong>, Christoph-Nikolas Straehle, Kaspar Sakmann, Eric Nalisnick"
-venue2: "ICCV 2023 Workshop on Uncertainty Quantification for Computer Vision"
+venue: ICCV Workshop on Uncertainty Quantification for Computer Vision
+# note:
 paper: docs/conformalbbox_uncv23.pdf
+# code:
+# poster: 
+# video: 
+# slides:
 ---
 
-We quantify the uncertainty in multi-object 2D bounding box predictions via conformal prediction, achieving practically useful prediction intervals with guaranteed per-class coverage for the bounding box coordinates.
+We quantify the uncertainty in multi-object 2D bounding box predictions via conformal prediction, producing tight prediction intervals with guaranteed per-class coverage for the bounding box coordinates.
