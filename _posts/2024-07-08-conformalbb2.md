@@ -8,7 +8,7 @@ author: "Alexander Timans"
 authors: "<strong>Alexander Timans</strong>, Christoph-Nikolas Straehle, Kaspar Sakmann, Eric Nalisnick"
 venue: European Conference on Computer Vision (ECCV)
 # note:
-paper: https://arxiv.org/pdf/2403.07263
+paper: https://arxiv.org/abs/2403.07263
 code: https://github.com/alextimans/conformal-od
 # poster: 
 # video: 

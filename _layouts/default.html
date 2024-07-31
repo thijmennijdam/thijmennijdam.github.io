@@ -3,24 +3,30 @@
 
 <head>
   <!-- Google tag (gtag.js) -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-5Z8P25E2DF"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PC4D4CQQNS"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
+    gtag('config', 'G-PC4D4CQQNS');
+  </script>
 
-    gtag('config', 'G-5Z8P25E2DF');
-  </script> -->
-  <title>{{ site.title }}</title>
-
+  <!-- Meta website info -->
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-  <meta name="author" content="{{ site.title }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Alexander Timans" />
+  <meta name="description" content="Alexander Timans' personal website" />
 
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
-    type="text/css">
+  <!-- Title and settings -->
+  <title>Alexander Timans</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="canonical" href="https://alextimans.github.io">
+  
+  <!-- Check icons here: https://favicon.io/ -->
+  <link rel="icon" href="images/favicon4.png">
+  <!-- Check fonts here: https://fonts.google.com/ -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|family=Quicksand:400,700|Inconsolata:400,700|VT323:400&display=swap" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -29,26 +35,26 @@
     <tr style="padding:0px">
       <td style="padding:0px">
 
-        <!-- INTRO + PIC -->
+        <!-- ABOUT ME & PIC -->
         <table
           style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr style="padding:0px">
             <td style="padding:2.5%;width:65%;vertical-align:middle">
-              <h1>
+              <main>
                 Alexander Timans
-              </h1>
+              </main>
               <p style="text-align: center;">
                 <a href="mailto:a.r.timans@uva.nl">Mail</a> &nbsp; | &nbsp;
-                <a href="https://github.com/alextimans">GitHub</a> &nbsp; | &nbsp;
-                <a href="https://scholar.google.com/citations?user=tgiKFH4AAAAJ">Google Scholar</a> &nbsp; | &nbsp;
                 <a href="https://www.linkedin.com/in/alexander-timans/">LinkedIn</a> &nbsp; | &nbsp;
+                <a href="https://scholar.google.com/citations?user=tgiKFH4AAAAJ">Google Scholar</a> &nbsp; | &nbsp;
+                <a href="https://github.com/alextimans">GitHub</a> &nbsp; | &nbsp;
                 <a href="docs/cv_timans_2023_09.pdf" target="_blank">CV</a>
               </p>
-              <p style="text-align: center; font-size: 12px;">
+              <p style="text-align: center; font-size: 11px;">
                 Last updated: July 2024
               </p>            
-              <h2>About me</h2>
-              <hr style="border: 1.5px solid black;">
+              <sub-sec>About me</sub-sec>
+              <hr class="subsec-hr">
               <p>
                 I am a PhD candidate at the <a href="https://www.uva.nl/en">University of Amsterdam</a> in the 
                 <a href="https://amlab.science.uva.nl/">Machine Learning Lab</a>, 
@@ -61,7 +67,7 @@
                 and <a href="https://ksakmann.github.io">Kaspar Sakmann</a>.
               </p>
               <p>
-                My <strong>research interests</strong> focus on principled and efficient uncertainty quantification for
+                My <b>research interests</b> focus on principled and efficient uncertainty quantification for
                 deep learning, with the goal of facilitating model reasoning and decision-making. 
                 This includes probabilistic approaches based on frequentist statistics such as 
                 <a href="https://arxiv.org/abs/2107.07511">conformal prediction</a>,
@@ -75,195 +81,45 @@
                 forecaster scoring</a>, robustness and 
                 <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/d201587e3a84fc4761eadc743e9b3f35-Abstract-Datasets_and_Benchmarks.html">
                   generalization</a>, or <a href="https://arxiv.org/abs/2006.06848">interpretability</a>. 
-                Applications of interest include computer vision, time series, and active or online settings.
+                Applications of interest include vision, time series, and online settings.
               </p>
               <p>
                 I graduated with an MSc in Statistics from <a href="https://math.ethz.ch/sfs">ETH Zurich</a>,
                 specialising in machine learning and computational statistics.
                 My master thesis was an interdisciplinary project with the 
-                <a href="http://mie-lab.ethz.ch">Mobility Information Engineering Lab</a>
+                <a href="http://mie-lab.ethz.ch">MIE Lab</a>
                 on uncertainty quantification in traffic prediction (see 
-                <a href="https://arxiv.org/abs/2308.06129">here</a>). I graduated with a BSc 
-                in Industrial Engineering and Management from the 
+                <a href="https://arxiv.org/abs/2308.06129">here</a>). I obtained a BSc 
+                in Industrial Engineering from the 
                 <a href="https://www.kit.edu/english/">Karlsruhe Institute of Technology</a> (KIT),
                 focusing on statistics and finance.
               </p>
             </td>
             <td style="padding:2.5%;width:35%;max-width:40%; vertical-align: middle;">
-              <img style="width:100%;max-width:100%;border: 2.5px solid black;border-radius: 5%;" alt="profile photo"
-                src="images/portrait.jpg">
-            </td>
+              <img style="width:100%;max-width:100%;border: 0.3px solid black;border-radius: 15%; margin-top: 30px;" 
+                   alt="profile photo" src="images/portrait.jpg">
+            </td>          
           </tr>
         </table>
 
         <!-- UPDATES -->
-        <!-- Scrollbar code adapted from https://github.com/kkhetarpal/kkhetarpal.github.io/blob/master/index.html#L200 -->
-        <!-- todo: should be dynamically generated from markdown files -->
         <table
           style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody>
             <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
 
-                <h2>Updates</h2>
-                <hr style="border: 1.5px solid black;">
+                <sub-sec>Updates</sub-sec>
+                <hr class="subsec-hr">
 
                 <div class="container sidebar col-md-3">
                   <div class="panel-body" id="oScroll">
                     <div id="scroll">
                       
-                      <!-- <p>
-                        <strong>DATE</strong>: TEXT <a href="URL">LINK</a>
-                      </p> -->
-                      <p>
-                        <strong>Jul 24, 2024</strong>: I'm glad to announce a new preprint, 
-                        great joint work with my lab mate <a href="https://metodj.github.io/">Metod Jazbec</a>. 
-                        Our paper titled <a href="https://arxiv.org/abs/2405.20915">Fast yet Safe: 
-                          Early-Exiting with Risk Control</a> addresses how to select the exit threshold for 
-                        early-exit models with performance guarantees via risk control. I'm presenting our work at 
-                        two ICML workshops this week: one focused on <a href="https://spigmworkshop2024.github.io/">
-                          probabilistic inference</a> (SPIGM), and one on <a href="	https://es-fomo.com/">
-                          efficient inference</a> (ES-FOMO). Hoping this will get both communities excited 
-                        (and beyond) about the usefulness of statistical ML for all kinds of applications!
-                      </p>
-                      <p>
-                        <strong>Jul 8, 2024</strong>: Happy to have our paper titled 
-                        <a href="https://arxiv.org/abs/2403.07263">Adaptive Bounding Box Uncertainties 
-                          via Two-Step Conformal Prediction</a> accepted at this year's 
-                        <a href="https://eccv2024.ecva.net/">European Conference on Computer Vision</a> (ECCV)! 
-                        We extended our workshop paper from last year to incorporate classification uncertainty 
-                        using a two-step conformal approach -- looking forward to sharing it with the vision community. 
-                        And yes, that will be me visiting Milan twice in September.
-                      </p>
-                      <p>
-                        <strong>May 23, 2024</strong>: On the side, I've been working with a small 
-                        student team on an idea related to conformal prediction for time series. We've 
-                        fleshed it out into a full paper titled <a href="https://arxiv.org/abs/2406.16766">
-                          Conformal time series decomposition with component-wise exchangeability</a>, which
-                        has been accepted at this year's <a href="https://copa-conference.com/">COPA</a> symposium, 
-                        the dedicated venue for conformal prediction research! Looking forward to attending 
-                        the conference in Milan in September, and hopefully meeting some of the field's founding figures 
-                        like Prof. <a href="https://scholar.google.com/citations?user=GJE29ekAAAAJ&hl=en&oi=ao">
-                          Vladimir Vovk</a>.
-                      </p>
-                      <p>
-                        <strong>Mar 18, 2024</strong>: Good times attending the 
-                        <a href="https://groups.oist.jp/mlss">Machine Learning Summer School</a> in Okinawa
-                        at <a href="https://www.oist.jp/">OIST</a>, with particularly interesting talks by 
-                        <a href="https://cs.uwaterloo.ca/~shai/">Shai Ben-David</a> and 
-                        <a href="https://pierrealquier.github.io/index.html">Pierre Alquier</a> on PAC and PAC-Bayes 
-                        respectively -- the evolution of generalization bounds continues. The OIST campus is breath-taking, 
-                        and Okinawa seems like a bit of a hidden gem for beach getaways. Continuing the adventure with 
-                        travels across Japan (Tokyo, Fuji, Kyoto, Osaka) until end of month, including a short visit to 
-                        the <a href="https://aip.riken.jp/?lang=en">RIKEN AIP</a> in Tokyo!
-                      </p>
-                      <p>
-                        <strong>Jan 29, 2024</strong>: Due to Eric's switch from the University of Amsterdam to 
-                        <a href="https://www.cs.jhu.edu/">Johns Hopkins</a> in Baltimore I am happy to have 
-                        <a href="https://naesseth.github.io/">Christian Naesseth</a> join as a co-supervisor alongside Eric. 
-                        Christian has done very interesting work in probabilistic modeling and we share a common interest in 
-                        statistical ML topics such as conformal prediction and 
-                        <a href="https://projecteuclid.org/journals/statistical-science/volume-38/issue-4/Game-Theoretic-Statistics-and-Safe-Anytime-Valid-Inference/10.1214/23-STS894.full">
-                          e-values</a> -- here's to a nice collaboration!
-                      </p>
-                      <p>
-                        <strong>Dec 4, 2023</strong>: We've published a preprint on a multiple testing correction dedicated to 
-                        conformal prediction applications, titled <a href="https://arxiv.org/abs/2311.10900">
-                          A powerful rank-based correction to multiple testing under positive dependency</a>.
-                      </p>
-                      <p>
-                        <strong>Nov 20, 2023</strong>: I am glad to see my student 
-                        <a href="https://dweprinz.github.io/">Derck Prinzhorn</a> receive an 
-                        <a href="https://amsterdamai.com/en/nieuws/2f9fad29-c3de-8e3e-1c67-9fb503f14f90/Recap-Amsterdam-AI-Highlights-Event">
-                          Amsterdam AI Thesis award</a> for his bachelor thesis on 
-                        <a href="https://github.com/dweprinz/Benchmarking-conformal-prediction-methods-for-time-series-regression">
-                          conformal prediction</a>, and present his work to the local community. He worked diligently at the 
-                        intersection of multiple complicated topics -- well done!
-                      </p>
-                      <p>
-                        <strong>Oct 23, 2023</strong>: I will be helping out as a teaching assistant for the courses 
-                        on <a href="https://enalisnick.github.io/human_ML.html">Human-in-the-loop ML</a> (MSc) 
-                        and Introduction to ML (BSc) for the winter teaching block until end of year 
-                        -- hoping to excite some new faces to the field!
-                      </p>
-                      <p>
-                        <strong>Oct 7, 2023</strong>: Participated in <a href="https://iccv2023.thecvf.com/">ICCV
-                          2023</a> in
-                        Paris to present our poster on 'Adaptive Bounding Box Uncertainty via Conformal Prediction' at
-                        the <a href="https://uncv2023.github.io/">Workshop on
-                          Uncertainty Quantification in Computer Vision</a> -- thanks to the organizers! It was fun to
-                        see the thriving ML community and the various research directions particulary in the computer
-                        vision domain. Notably, there was a lot of work on multi-modality and foundation model
-                        finetuning. Some interesting thoughts on the current state of the field were given in the <a
-                          href="https://gkioxari.github.io/Tutorials/iccv2023/">Quo Vadis, Computer Vision</a> workshop
-                        by the likes of <a
-                          href="https://scholar.google.com/citations?user=5H0arvkAAAAJ&hl=en&oi=ao">David Forsyth</a>,
-                        <a href="https://scholar.google.com/citations?user=0zZnyMEAAAAJ&hl=en&oi=sra">Bill Freeman</a>
-                        and <a href="https://scholar.google.com/citations?user=aOklxsQAAAAJ&hl=en&oi=ao">Jitendra
-                          Malik</a> -- is "putting language into vision" the best approach? Also got
-                        to catch <a href="https://scholar.google.com/citations?user=WLN3QrAAAAAJ&hl=en&oi=ao">Yann
-                          LeCun</a> in person at the Meta booth!
-                      </p>
-                      <p>
-                        <strong>Sep 1, 2023</strong>: I was happy to participate in the <a
-                          href="https://fcai.fi/eds2023/home">ELLIS Doctoral Symposium 2023</a> in Helsinki, Finland! A
-                        lot of fun activities (and sauna galore) and great to see so many fellow ML PhD students
-                        enthusiastically present their work. Particularly interesting discussions on <a
-                          href="https://arxiv.org/abs/2306.02738">calibration for regression</a> and <a
-                          href="https://arxiv.org/abs/2303.12783">conformal prediction for time series</a> -- thanks and
-                        maybe see you next year!
-                      </p>
-                      <p>
-                        <strong>Aug 23, 2023</strong>: The AMLab yearly retreat was good fun, with karaoke and escape
-                        room action as well as plenty of socialising -- I'm happy to be working with such a nice crowd!
-                      </p>
-                      <p>
-                        <strong>Aug 11, 2023</strong>: The research paper <a
-                          href="https://arxiv.org/abs/2308.06129">Uncertainty Quantification for Image-based Traffic
-                          Prediction across Cities</a>, a resulting work from my master thesis in collaboration with the
-                        <a href="http://mie-lab.ethz.ch">Mobility Information Engineering Lab</a> at ETH Zurich, is
-                        finally publicly available on arXiv!
-                      </p>
-                      <p>
-                        <strong>Aug 9, 2023</strong>: Our workshop submission on 'Adaptive Bounding Box Uncertainty via
-                        Conformal Prediction' got accepted to the <a href="https://uncv2023.github.io/">Workshop on
-                          Uncertainty Quantification in Computer Vision</a> at ICCV 2023 -- looking forward to
-                        presenting our work in Paris!
-                      </p>
-                      <p>
-                        <strong>Aug 1, 2023</strong>: My bachelor student Derck Prinzhorn successfully graduated with a
-                        thesis on the topic of <a
-                          href="https://github.com/dweprinz/Benchmarking-conformal-prediction-methods-for-time-series-regression">Benchmarking
-                          conformal prediction methods for time series regression</a> -- great job and congratulations!
-                      </p>
-                      <p>
-                        <strong>Apr 4, 2023</strong>: Started a bachelor thesis supervision project on conformal
-                        prediction for time series, as well as TA'ing the <a href="https://uvadl2c.github.io">Deep
-                          Learning 2</a> course with a module on uncertainty quantification. I am also supervising a
-                        course project on Bayesian <a
-                          href=http://proceedings.mlr.press/v139/daxberger21a.html">subnetwork inference</a>.
-                      </p>
-                      <p>
-                        <strong>Mar 28, 2023</strong>: Had an interesting time at the Bosch Center for Artificial
-                        Intelligence
-                        HQ in <a href="https://www.bosch-ai.com/about-us/our-locations/">Renningen</a> in the context of
-                        a lab visit organised by the <a href="https://ivi.fnwi.uva.nl/uvaboschdeltalab/">Delta Lab</a>.
-                        It was great to meet my Bosch co-supervisors in person and see about how our research can
-                        potentially translate to Bosch applications, such as in autonomous driving and robotics.
-                      </p>
-                      <p>
-                        <strong>Feb 16, 2023</strong>: Participated in the <a
-                          href="https://homepages.cwi.nl/~wmkoolen/MLT_Sem23/bootcamp.html">CWI Machine Learning Theory
-                          Bootcamp</a> just next door to the University campus.
-                        I particularly enjoyed the talk by <a
-                          href="https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/foundations-of-machine-learning-systems/people/robert-c-williamson/">Bob
-                          Williamson</a> on imprecise probability.
-                      </p>
-                      <p>
-                        <strong>Oct 10, 2022</strong>: Joined the <a href="https://amlab.science.uva.nl/">Amsterdam
-                          Machine Learning Lab</a> (AMLab) as a PhD candidate supervised by <a
-                          href="https://enalisnick.github.io/">Eric Nalisnick</a>!
-                      </p>
+                      {% assign sorted_updates = site.updates | sort: 'date' | reverse %}
+                      {% for update in sorted_updates %}
+                        <span>{{ update.content | markdownify }}</span>
+                      {% endfor %}
 
                     </div>
                   </div>
@@ -275,16 +131,11 @@
         </table>
 
         <!-- RESEARCH -->
-        <table
-          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Research</h2>
-              <hr style="border: 1.5px solid black;">
-            </td>
-          </tr>
-        </table>
-
+        <div style="padding: 2.5%;">
+          <sub-sec style="margin: 0; padding: 0;">Research</sub-sec>
+          <hr class="subsec-hr">
+        </div>
+        
         <table
           style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           {% for post in site.posts %}
@@ -293,7 +144,7 @@
           <tr>
 
             <td style="padding:2.5%;width:60%;vertical-align:middle">
-              <h4>{{post.title}}</h4>
+              <paper-title>{{post.title}}</paper-title>
               <br>
               {{post.authors}}
               <br>
@@ -336,55 +187,23 @@
           {% endfor %}
         </table>
 
-        <!-- TALKS -->
-        <!-- <table
-          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Talks</h2>
-              <hr style="border: 1px solid black;">
-            </td>
-          </tr>
-        </table> -->
+        <!-- OTHER ACTIVITIES -->
+        <div style="padding: 2.5%;">
+          <sub-sec style="margin: 0; padding: 0;">Other activities</sub-sec>
+          <hr class="subsec-hr">
+        </div>
 
-        <!-- <table
-          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'talk' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h2>{{post.title}}</h2>
-              <br>
-              {% if post.venue_link %}
-              <h3><a href={{post.venue_link}}>{{post.venue}}</a></h3>
-              {% else %}
-              <h3>{{post.venue}}</h3>
-              {% endif %}
-              , {{ post.date | date: "%Y" }}
-              <br>
-              {% if post.info %}
-              <em>{{post.info}}</em>
-              <br>
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table> -->
+        <ul style="padding-left: 35px; margin-top: 0px; list-style-type: square;">
+          <li>
+            <b>Reviewing</b>: NeurIPS 2024, ICCV 2023
+          </li>
+          <li>
+            <b>Teaching & Supervision</b>: Project AI (MSc/UvA), 
+            Human-in-the-loop ML (MSc/UvA), Introduction to ML (BSc/UvA),
+            Derck Prinzhorn (BSc Thesis/UvA, <b>Thesis award</b>), 
+            Deep Learning 2 (MSc/UvA), ANOVA (MSc/ETH), Econometrics (BSc/KIT)
+          </li>
+        </ul>
 
         <!-- SOURCE -->
         <table
@@ -392,11 +211,10 @@
           <tr>
             <td style="padding:0px">
               <br>
-              <p style="text-align:center;font-size:small;">
-                Source: adapted from <a style="font-size:small;" href="https://dvtailor.github.io">Dharmesh Tailor's
-                  fork</a>
-                of <a style="font-size:small;" href="https://leonidk.com/">Leonid Keselman's fork</a> of <a
-                  style="font-size:small;" href="https://jonbarron.info">John Barron's website</a>.
+              <p style="text-align:center;font-size:11px;">
+                Source: adapted from <a style="font-size:11px;" href="https://dvtailor.github.io">Dharmesh Tailor's
+                  fork</a> of <a style="font-size:11px;" href="https://leonidk.com/">Leonid Keselman's fork</a> of 
+                  <a style="font-size:11px;" href="https://jonbarron.info">John Barron's website</a>.
               </p>
             </td>
           </tr>

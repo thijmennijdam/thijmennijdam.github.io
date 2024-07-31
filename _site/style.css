@@ -1,1 +1,30 @@
-a{color:#1772d0;text-decoration:none}a:focus,a:hover{color:#f09228;text-decoration:none}body,td,th,tr,p,a{font-family:'Lato', Verdana, Helvetica, sans-serif;font-size:14px;font-display:auto}strong{font-family:'Lato', Verdana, Helvetica, sans-serif;font-size:14px;font-display:auto}h2{font-family:'Lato', Verdana, Helvetica, sans-serif;font-size:24px;font-display:auto;font-weight:normal;padding:0px;margin:0px;display:inline}h4{font-family:'Lato', Verdana, Helvetica, sans-serif;font-size:20px;font-display:auto;font-weight:normal;padding:0px;margin:0px;display:inline}h3{font-family:'Lato', Verdana, Helvetica, sans-serif;font-size:14px;font-weight:700;font-display:auto;padding:0px;margin:0px;display:inline}h1{font-family:'Lato', Verdana, Helvetica, sans-serif;font-size:32px;font-weight:normal;font-display:auto;text-align:center;padding:0px;margin-block-start:14px;margin-block-end:14px;margin-left:0px;margin-right:0px}.one{width:160px;height:160px;position:relative}.two{width:160px;height:160px;position:absolute;transition:opacity .2s ease-in-out;-moz-transition:opacity .2s ease-in-out;-webkit-transition:opacity .2s ease-in-out}.fade{transition:opacity .2s ease-in-out;-moz-transition:opacity .2s ease-in-out;-webkit-transition:opacity .2s ease-in-out}span.highlight{background-color:#ffffd0}#scroll{position:absolute;white-space:normal;top:0px;left:0px}#oScroll{margin:0px;padding:0px;position:relative;width:auto;height:280px;overflow:scroll;overflow-x:hidden}#oScroll::-webkit-scrollbar{width:10px;height:10px}#oScroll::-webkit-scrollbar-track{background:#f1f1f1;border-radius:10px}#oScroll::-webkit-scrollbar-thumb{background:#888;border-radius:10px}#oScroll::-webkit-scrollbar-thumb:hover{background:#555}
+a { color: #4d1af3; text-decoration: none; }
+
+a:focus, a:hover { color: #f07f28; text-decoration: none; }
+
+a { font-family: "Noto Sans", sans-serif; font-size: 13px; font-display: auto; }
+
+body, td, th, tr, p { font-family: "Noto Sans", sans-serif; font-size: 13px; font-display: auto; }
+
+b { font-family: "Noto Sans", sans-serif; font-size: 13px; font-display: auto; }
+
+main { font-family: "VT323", monospace; font-size: 36px; font-weight: normal; font-display: auto; text-align: center; padding: 0px; margin-block-start: 14px; margin-block-end: 14px; margin-left: 0px; margin-right: 0px; }
+
+sub-sec { font-family: "VT323", monospace; font-size: 26px; font-display: auto; font-weight: normal; padding: 0px; margin: 0px; display: inline; }
+
+paper-title { font-family: "Noto Sans", sans-serif; font-size: 20px; font-display: auto; font-weight: normal; padding: 0px; margin: 0px; display: inline; }
+
+.subsec-hr { border: 1.8px dashed black; }
+
+#scroll { white-space: normal; position: absolute; }
+
+#oScroll { margin: 0; padding: 0; position: relative; height: 280px; overflow-y: auto; overflow-x: hidden; }
+
+/* Custom scrollbar styling */
+#oScroll::-webkit-scrollbar { width: 10px; /* Width of the scrollbar */ }
+
+#oScroll::-webkit-scrollbar-track { background: #f1f1f1; /* Color of the track */ border-radius: 10px; /* Rounded corners for the track */ }
+
+#oScroll::-webkit-scrollbar-thumb { background: #888; /* Color of the scrollbar thumb */ border-radius: 10px; /* Rounded corners for the thumb */ }
+
+#oScroll::-webkit-scrollbar-thumb:hover { background: #555555; /* Color of the scrollbar thumb on hover */ }
