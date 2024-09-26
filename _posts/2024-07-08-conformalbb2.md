@@ -10,7 +10,7 @@ venue: European Conference on Computer Vision (ECCV) <strong>Oral</strong>
 note: ECCV Workshop on Uncertainty Quantification for Computer Vision
 paper: https://arxiv.org/abs/2403.07263
 code: https://github.com/alextimans/conformal-od
-# poster: 
+poster: docs/conformalbb_eccv24.pdf
 # video: 
 # slides:
 ---

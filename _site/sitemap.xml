@@ -101,7 +101,15 @@
 <lastmod>2024-08-21T00:00:00+02:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/updates/2024-09-26.html</loc>
+<lastmod>2024-09-26T00:00:00+02:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/docs/conformalbb_eccv24.pdf</loc>
+<lastmod>2024-09-22T17:06:18+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/docs/conformalbbox_uncv23.pdf</loc>
