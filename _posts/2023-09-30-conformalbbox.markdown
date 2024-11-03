@@ -6,7 +6,7 @@ image: /images/conformalbbox2.jpg
 categories: research
 author: "Alexander Timans"
 authors: "<strong>Alexander Timans</strong>, Christoph-Nikolas Straehle, Kaspar Sakmann, Eric Nalisnick"
-venue: ICCV Workshop on Uncertainty Quantification for Computer Vision
+venue: ICCV Workshop on Uncertainty Quantification for CV
 # note:
 paper: docs/conformalbbox_uncv23.pdf
 # code:

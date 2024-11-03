@@ -7,7 +7,7 @@ categories: research
 author: "Alexander Timans"
 authors: "<strong>Alexander Timans</strong>, Christoph-Nikolas Straehle, Kaspar Sakmann, Eric Nalisnick"
 venue: European Conference on Computer Vision (ECCV) <strong>Oral</strong>
-note: ECCV Workshop on Uncertainty Quantification for Computer Vision
+note: "Also in: ECCV Workshop on Uncertainty Quantification for CV"
 paper: https://arxiv.org/abs/2403.07263
 code: https://github.com/alextimans/conformal-od
 poster: docs/conformalbb_eccv24.pdf
