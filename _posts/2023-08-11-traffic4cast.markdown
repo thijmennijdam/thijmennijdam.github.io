@@ -6,7 +6,7 @@ image: /images/traffic4cast.png
 categories: research
 author: "Alexander Timans"
 authors: "<strong>Alexander Timans</strong>, Nina Wiedemann, Nishant Kumar, Ye Hong, Martin Raubal"
-venue: "Preprint (arXiv)"
+venue: Master Thesis (arXiv)
 # note:
 paper: https://arxiv.org/abs/2308.06129
 code: https://github.com/alextimans/traffic4cast-uncertainty/tree/main
