@@ -15,4 +15,4 @@ paper: docs/conformalbbox_uncv23.pdf
 # slides:
 ---
 
-We quantify the uncertainty in multi-object 2D bounding box predictions via conformal prediction, producing tight prediction intervals with guaranteed per-class coverage for the bounding box coordinates.
+We quantify the uncertainty in multi-object 2D bounding box predictions via conformal prediction, producing tight prediction intervals with guaranteed per-class coverage for bounding boxes.
