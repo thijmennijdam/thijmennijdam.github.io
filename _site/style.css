@@ -8,9 +8,9 @@ body, td, th, tr, p { font-family: "Noto Sans", sans-serif; font-size: 13px; fon
 
 b { font-family: "Noto Sans", sans-serif; font-size: 13px; font-display: auto; }
 
-main { font-family: "VT323", monospace; font-size: 36px; font-weight: normal; font-display: auto; text-align: center; padding: 0px; margin-block-start: 14px; margin-block-end: 14px; margin-left: 0px; margin-right: 0px; }
+main { font-family: "Roboto Mono", monospace; font-size: 36px; font-weight: normal; font-display: auto; text-align: center; padding: 0px; margin-block-start: 14px; margin-block-end: 14px; margin-left: 0px; margin-right: 0px; }
 
-sub-sec { font-family: "VT323", monospace; font-size: 26px; font-display: auto; font-weight: normal; padding: 0px; margin: 0px; display: inline; }
+sub-sec { font-family: "Roboto Mono", monospace; font-size: 26px; font-display: auto; font-weight: normal; padding: 0px; margin: 0px; display: inline; }
 
 paper-title { font-family: "Noto Sans", sans-serif; font-size: 20px; font-display: auto; font-weight: normal; padding: 0px; margin: 0px; display: inline; }
 
