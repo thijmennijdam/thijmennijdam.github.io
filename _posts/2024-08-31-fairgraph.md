@@ -7,7 +7,7 @@ categories: research
 author: "Thijmen Nijdam"
 authors: <strong>Thijmen Nijdam</strong>, Juell Sprott, Taiki Papandreou-Lazos, Jurgen de Heus
 venue: "Transactions on Machine Learning Research (TMLR)"
-note: <u>Also:</u> Presented at NeurIPS 2024 as a poster as part of the Machine Learning Reprodicibilty Challenge (MLRC)
+note: <u>Also:</u> Presented at NeurIPS 2024 as a poster as part of the Machine Learning Reproducibility Challenge (MLRC)
 paper: https://openreview.net/forum?id=4WiqHopXQX
 code: https://github.com/juellsprott/graphair-reproducibility
 poster: docs/poster_fairgraph.pdf
