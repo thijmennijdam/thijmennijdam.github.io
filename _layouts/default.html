@@ -21,6 +21,11 @@
   <title>Thijmen Nijdam</title> 
 
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <style>
+    /* Profile photo: align with the bottom of the About Me text, centre it on narrow screens */
+    .photo-cell { vertical-align: bottom; }
+    @media (max-width: 600px) { .photo-cell { vertical-align: middle; } }
+  </style>
   <link rel="canonical" href="https://thijmennijdam.github.io">
 
   <!-- Check icons here: https://favicon.io/ -->
@@ -69,8 +74,8 @@
             </p>
             </td>
 
-            <td style="padding:2.5%;width:35%;max-width:40%; vertical-align: middle;">
-              <img style="width:100%;max-width:100%;border: 1.5px solid black;border-radius: 20%; margin-top: 30px;" 
+            <td class="photo-cell" style="padding:2.5%;width:35%;max-width:40%;">
+              <img style="width:100%;max-width:100%;border: 1.5px solid black;border-radius: 20%; margin-bottom: 13px;"
                    alt="profile photo" src="images/portret_thijmen.jpeg">
             </td>      
           </tr>
