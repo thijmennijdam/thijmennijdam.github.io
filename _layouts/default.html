@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head> 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PC4D4CQQNS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date());
+    gtag('config', 'G-PC4D4CQQNS');
+  </script> 
+
+  <!-- Meta website info -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Thijmen Nijdam" />
+  <meta name="description" content="Thijmen Nijdam, Robot Learning Research Engineer at the University of Amsterdam" />
+
+  <!-- Title and settings -->
+  <title>Thijmen Nijdam</title> 
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <style>
+    /* Profile photo: align with the bottom of the About Me text, centre it on narrow screens */
+    .photo-cell { vertical-align: bottom; }
+    @media (max-width: 600px) { .photo-cell { vertical-align: middle; } }
+  </style>
+  <link rel="canonical" href="https://thijmennijdam.github.io">
+
+  <!-- Check icons here: https://favicon.io/ -->
+  <link rel="icon" href="images/favicon-cowboyhat.png">
+  <!-- Check fonts here: https://fonts.google.com/ -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|family=Quicksand:400,700|Inconsolata:400,700|Oswald:400&display=swap" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <table
+    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr style="padding:0px">
+      <td style="padding:0px">
+
+        <!-- ABOUT ME & PIC -->
+        <table
+          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:65%;vertical-align:middle">
+            <main>
+              Thijmen Nijdam
+            </main>
+            <p style="text-align: center;">
+              <a href="mailto:thijmen.nijdam@gmail.com">Mail</a> &nbsp; | &nbsp;
+              <a href="https://www.linkedin.com/in/thijmen-nijdam/">LinkedIn</a> &nbsp; | &nbsp;
+              <a href="https://scholar.google.com/citations?user=2LvZ7lsAAAAJ&hl=en">Google Scholar</a> &nbsp; | &nbsp;
+              <a href="https://github.com/thijmennijdam">GitHub</a> &nbsp; | &nbsp;
+              <a href="docs/CV.pdf" target="_blank">CV</a>
+            </p>
+            <p style="text-align: center; font-size: 11px;">
+              Last updated: November 2026
+            </p>
+            <sub-sec>About Me</sub-sec>
+            <hr class="subsec-hr">
+            <p>
+            I am a Robot Learning Research Engineer at the <a href="https://www.uva.nl/en">University of Amsterdam</a>, working with the <a href="https://ivi.fnwi.uva.nl/vislab/">VISLab</a> under the supervision of <a href="https://www.egavves.com/">Prof. Efstratios Gavves</a> and in collaboration with <a href="https://www.toyota-europe.com/">Toyota Motor Europe</a> and the <a href="https://www.tri.global/">Toyota Research Institute</a>. I work on real-to-sim-to-real robot learning for manipulation on a Franka arm.
+            </p>
+            <p>
+            I did my BSc and MSc in AI at the University of Amsterdam, where I worked as a research intern on projects in information retrieval, uncertainty quantification, and benchmarking physical reasoning in video generation. My MSc thesis on <a href="https://thijmennijdam.github.io/local-world-models/">local world models</a> for articulated object manipulation, supervised by <a href="https://zadaianchuk.github.io/">Dr. Andrii Zadaianchuk</a> and Prof. Efstratios Gavves, sparked my interest in robot learning and world models, and was published at the Robot World Models Workshop at RSS 2026.
+            </p>
+            <p>
+            Outside of work, I enjoy hiking, running, playing squash and chess, and nerding out over Formula 1.
+            </p>
+            </td>
+
+            <td class="photo-cell" style="padding:2.5%;width:35%;max-width:40%;">
+              <img style="width:100%;max-width:100%;border: 1.5px solid black;border-radius: 20%; margin-bottom: 13px;"
+                   alt="profile photo" src="images/portret_thijmen.jpeg">
+            </td>      
+          </tr>
+        </table>
+
+        <!-- RESEARCH -->
+        <div style="padding: 2.5%;">
+          <sub-sec style="margin: 0; padding: 0;">Publications</sub-sec>
+          <hr class="subsec-hr">
+        </div>
+        
+        <table
+          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'research' %}
+          <tr>
+
+            <td style="padding:2.5%;width:60%;vertical-align:middle">
+              <paper-title>{{post.title}}</paper-title>
+              <br>
+              {{post.authors}}
+              <br>
+              <br>
+              {% if post.venue %}
+              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+              <br>
+              {% endif %}
+              {% if post.note %}
+              <em>{{post.note}}</em>
+              <br>
+              {% endif %}
+              Links:
+              {% if post.paper %}
+              <a href="{{post.paper}}" target="_blank">Paper</a>
+              {% endif %}
+              {% if post.website %}
+              | <a href="{{post.website}}" target="_blank">Website</a>
+              {% endif %}
+              {% if post.code %}
+              | <a href="{{post.code}}" target="_blank">Code</a>
+              {% endif %}
+              {% if post.poster %}
+              | <a href="{{post.poster}}" target="_blank">Poster</a>
+              {% endif %}
+              {% if post.video %}
+              | <a href="{{post.video}}" target="_blank">Video</a>
+              {% endif %}
+              {% if post.slides %}
+              | <a href="{{post.slides}}" target="_blank">Slides</a>
+              {% endif %}
+              {{ post.excerpt }}
+            </td>
+
+            <td style="padding:2.5%;width:40%;vertical-align:middle;text-align: center;">
+              <img src="{{post.image}}" alt="project image"
+                style="width:auto; height:auto; max-width:110%; max-height: 110%;" />
+            </td>
+
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+
+        <!-- SOURCE -->
+        <table
+          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:0px">
+              <br> 
+              <p style="text-align:center;font-size:11px;">
+                Source: adapted from <a style="font-size:11px;" href="https://alextimans.github.io/">Alexander Timans'
+                  fork</a> of <a style="font-size:11px;" href="https://dvtailor.github.io">Dharmesh Tailor's
+                  fork</a> of <a style="font-size:11px;" href="https://leonidk.com/">Leonid Keselman's fork</a> of 
+                  <a style="font-size:11px;" href="https://jonbarron.info">John Barron's website</a>.
+              </p>
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
