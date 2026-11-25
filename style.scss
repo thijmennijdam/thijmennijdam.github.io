@@ -36,7 +36,8 @@ h3 { font-size: 1.2rem; line-height: 1.3; letter-spacing: -.01em; margin: 0 0 8p
 h3 span { color: var(--muted); font-weight: 400; }
 .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
 .card > .pair { object-fit: contain; background: var(--card); border-bottom: 0; }
-.duo .card > video { aspect-ratio: 16 / 9; object-fit: contain; background: var(--card); }
+.duo .card > video { aspect-ratio: 16 / 9; object-fit: cover; object-position: center 25%; background: var(--card); }
+.duo .card > .pair { object-fit: contain; }
 .arrows { position: relative; }
 .arr { position: absolute; top: 34%; width: 54px; height: 54px; border-radius: 50%; border: 0; background: var(--accent); color: var(--on); cursor: pointer; display: grid; place-items: center; z-index: 3; box-shadow: 0 4px 16px rgba(0, 0, 0, .22); transition: transform .15s; }
 .arr.next { right: -22px; }
