@@ -8,6 +8,7 @@ author: "Thijmen Nijdam"
 authors: <strong>Thijmen Nijdam</strong>, Juell Sprott, Taiki Papandreou-Lazos, Jurgen de Heus
 venue: "Transactions on Machine Learning Research (TMLR)"
 short: TMLR 2024
+line: Reproduces a fair graph learning method and extends it to link prediction.
 note: <u>Also:</u> Presented at NeurIPS 2024 as a poster as part of the Machine Learning Reproducibility Challenge (MLRC)
 paper: https://openreview.net/forum?id=4WiqHopXQX
 code: https://github.com/juellsprott/graphair-reproducibility
