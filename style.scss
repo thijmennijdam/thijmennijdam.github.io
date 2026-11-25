@@ -44,13 +44,13 @@ h3 span { color: var(--muted); font-weight: 400; }
 .arr.prev { left: -22px; }
 .arr:hover { transform: scale(1.07); }
 .arr:focus-visible { outline: 3px solid var(--text); outline-offset: 2px; }
-.arr:disabled { display: none; }
-.track { display: flex; gap: 22px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 2px; }
+.arr.off { visibility: hidden; }
+.track { display: flex; gap: 22px; overflow-x: auto; scrollbar-width: none; padding: 2px; }
 .track::-webkit-scrollbar { display: none; }
 .track:focus-visible { outline: 2px solid var(--accent); outline-offset: 6px; border-radius: 18px; }
-.track .card { flex: 0 0 calc((100% - 26px) / 2); scroll-snap-align: start; }
+.track .card { flex: 0 0 calc((100% - 26px) / 2); }
 .tag { color: var(--muted); font-size: .9rem; margin-bottom: 10px; }
-.card { position: relative; border: 1px solid var(--line); border-radius: 18px; overflow: hidden; background: var(--card); display: flex; flex-direction: column; transition: border-color .15s; }
+.card { contain: layout paint; position: relative; border: 1px solid var(--line); border-radius: 18px; overflow: hidden; background: var(--card); display: flex; flex-direction: column; transition: border-color .15s; }
 .card > video, .card > img { width: 100%; aspect-ratio: 5 / 4; object-fit: cover; display: block; background: #fff; border-bottom: 1px solid var(--line); }
 .card > .topv { object-position: top; }
 .card > img.fit { object-fit: contain; padding: 14px; }
@@ -59,7 +59,6 @@ h3 span { color: var(--muted); font-weight: 400; }
 .card > div { padding: 22px 24px; flex: 1; display: flex; flex-direction: column; }
 .card-link { color: inherit; }
 .card-link::after { content: ""; position: absolute; inset: 0; }
-.card:has(.card-link):hover { border-color: var(--accent); }
 .card p { color: var(--muted); }
 .soon { margin: 0; }
 .more { margin: auto 0 0 !important; padding-top: 6px; }
