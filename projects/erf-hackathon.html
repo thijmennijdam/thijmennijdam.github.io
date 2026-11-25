@@ -7,13 +7,18 @@ description: Autonomous navigation with two Lely Juno robots at the European Rob
 <h1>European Robotics Forum Hackathon</h1>
 <p class="tag">Rotterdam, 2022</p>
 <img class="hero-img" src="/images/projects/erf.jpg" alt="The simulated barn with robots at the hackathon">
-<p>In this hackathon, university teams programmed robots for tasks from farming. Our University of Amsterdam team worked with two Lely Juno robots, which push feed back towards the cows in a barn, and made them drive through a simulated barn on their own.</p>
+<p>At the European Robotics Forum 2022 in Rotterdam, teams from eight European universities competed in the "Battle of Institutions" hackathon, with challenges from Lely, Franka Emika and RoboHouse. Our University of Amsterdam team worked with two Lely Juno robots, which push feed back towards the cows in a barn. The goal was to let them drive through a simulated barn on their own.</p>
+<p>The challenge had nine scored tasks. Among them were following walls, letting two robots share a narrow passage, avoiding obstacles, returning to a base station, and switching on lights when the robots came close to each other.</p>
 <h2>What we built</h2>
 <ul>
-  <li><b>Two ways to navigate.</b> One robot followed the walls using sonar. The other built a map with a LiDAR and drove along waypoints.</li>
-  <li><b>Sharing narrow passages.</b> The robots told each other over ROS when a passage was occupied, so one could wait.</li>
-  <li><b>Finding home.</b> A camera looked for a colored marker at the base station, and the robot steered towards it.</li>
+  <li><b>Navigation.</b> We prepared two approaches. The first follows walls using three sonar sensors and switches between actions based on the distances to the right and in front. The second builds a map with a LiDAR (SLAM) and follows waypoints with a state machine.</li>
+  <li><b>Sharing narrow passages.</b> The robots communicated over ROS. One had priority, and the other stopped and backed up while the passage was occupied.</li>
+  <li><b>Finding home.</b> A webcam looked for a colored cone at the base station, and the robot steered towards it. The arena was full of red objects, so we switched the color to green.</li>
+  <li><b>Lights.</b> The same color detection estimated how far apart the robots were, and switched smart plugs on over MQTT when they came close.</li>
+  <li><b>Monitoring.</b> A live ROS dashboard showed the LiDAR scans, maps, sensor readings and robot state.</li>
 </ul>
+<h2>What went differently</h2>
+<p>We had tested our solutions on TurtleBot3 robots beforehand, and the real machines were different. The LiDAR could not be mounted in the center of the Juno, so it did not see all the way around and the maps became worse. One robot therefore switched to wall following. The other had no mounts for the sonar sensors, so it drove purely by following colors with its camera.</p>
 <h2>Team</h2>
 <p>F. Barkhof, S. van den Bent, O. Bosgraaf, S. Gunneweg, J. de Heus, Thijmen Nijdam, Derck Prinzhorn, J. Sprott.</p>
 <p><a href="/#projects">Back to projects</a></p>
